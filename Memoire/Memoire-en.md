@@ -889,7 +889,7 @@ Audience measurement for the exclusive account of the publisher: https://www.cni
 Privacy Policy Pages: https://www.guillaume-sinnaeve.com/fr/privacy-policy and https://www.guillaume-sinnaeve.com/en/privacy-policy 
 
 ##### [10]  
-Page collect.php: https://github.com/gsinna/MIASHS/blob/master/site/analytics/collect.php
+Page collect.php: https://github.com/gsinna/master-miashs/blob/master/site/analytics/collect.php
 
 ##### [11]  
 Geolocation should not be more precise than the scale of the city: https://www.cnil.fr/sites/default/files/atoms/files/projet_de_recommandation_cookies_et_autres_traceurs.pdf 
@@ -907,10 +907,10 @@ C3.js library: https://c3js.org/
 D3.js library: https://d3js.org/
 
 ##### [16]  
-Requests.php page: https://github.com/gsinna/MIASHS/blob/master/site/analytics/requests.php
+Requests.php page: https://github.com/gsinna/master-miashs/blob/master/site/analytics/requests.php
 
 ##### [17]  
-Dash.js page: https://github.com/gsinna/MIASHS/blob/master/site/analytics/dash.js
+Dash.js page: https://github.com/gsinna/master-miashs/blob/master/site/analytics/dash.js
 
 
 ## Appendices
