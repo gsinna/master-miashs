@@ -1,0 +1,46 @@
+Options -Indexes
+
+RewriteEngine On
+
+# HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+# Redirect to file without php extension
+RewriteCond %{THE_REQUEST} \.php
+RewriteRule ^(.*)\.php$ /$1 [L,R=301]
+
+# Redirect the repository to the home file
+RewriteRule ^(fr|en)/$ /$1/home [R=301,L]
+
+# Redirect the repository to the home file
+# RewriteRule ^analytics\/(collect|connection|requests)\.php$ https://www.guillaume-sinnaeve.com [R=301,L]
+
+# Redirect to 404 page for path fr
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_URI} ^/fr [NC]
+RewriteRule ^(.*)$ https://www.guillaume-sinnaeve.com/fr/404 [L,R=301]
+
+# Redirect to 404 page for path en
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_URI} ^/en [NC]
+RewriteRule ^(.*)$ https://www.guillaume-sinnaeve.com/en/404 [L,R=301]
+
+
+# Redirect to 404 page for language fr
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{HTTP:Accept-language} ^fr [NC]
+RewriteRule ^(.*)$ https://www.guillaume-sinnaeve.com/fr/404 [L,R=301]
+
+# Redirect to 404 page for others language
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{HTTP:Accept-language} !^fr [NC]
+RewriteRule ^(.*)$ https://www.guillaume-sinnaeve.com/en/404 [L,R=301]

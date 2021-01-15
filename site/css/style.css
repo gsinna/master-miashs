@@ -1,0 +1,546 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+    margin-bottom: 6px;
+    margin-top: 0px;
+}
+
+h3 {
+	color: #377b89;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+    font-size: 16px;    
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    width: 100%;
+}
+
+section:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 40px 5px;
+    text-align: right;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+form {
+	margin-top: 50px;
+}
+
+.button, input[type=submit] {
+    background-color: #377b89;
+    border:	1px solid #377b89;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    color: #fff;
+    cursor: pointer;    
+    display: flex;
+    font-weight: bold;
+    margin: 40px auto 0px auto;
+    outline: none;
+    padding: 7px 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button:hover, input[type=submit]:hover, .button:focus, input[type=submit]:focus, .button:active, input[type=submit]:active {
+    background-color: #fff;
+	border-color: #377b89;
+	color: #377b89;
+}
+
+button.call-me {
+    background-color: #387dcc;
+    border: 1px solid #387dcc;
+    color: #fff;
+    font-size: 24px;
+}
+
+button.call-me:hover {
+    background-color: #fff;
+    color: #387dcc;
+}
+
+button.call-me i.fa.fa-phone {
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+}
+
+#main {
+    display: block;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#me-picture {
+	float: left;
+    margin-right: 50px;
+    width: 450px;
+}
+
+#me-picture img {
+    bottom: -4px;
+	max-width : 450px;
+	position: relative;
+}
+
+#me-description {
+	padding: 50px 0px 0px 0px;
+	text-align: justify;
+}
+
+#me-description h1 {
+	padding-bottom: 20px;
+}
+
+#me-description h2 {
+    color: #377b89;
+	font-style: italic;
+	padding-bottom: 20px;
+}
+
+#thesis {
+    text-align: justify;
+}
+
+#thesis h4, #thesis h3 {
+    margin-top: 50px;
+}
+
+#thesis a {
+    color: #377b89;
+}
+
+#footer {
+    background-color: #424242;
+    bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+#footer a {
+    color: #fff;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container h1, .dash-container h1 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.nav {
+    background-color: #377b89;
+    overflow: hidden;
+}
+
+.nav a, .nav span {
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    float: left;
+    font-size: 16px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav a.active {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.nav .icon {
+    color: #fff;
+    display: none;
+}
+
+.language a {
+    display: inline-block !important;
+    float: none !important;
+    padding: 0px !important;
+}
+
+.language a.active {
+    border-bottom: none !important;
+}
+
+.full-container {
+	padding-top: 50px;
+	width: 100% 
+}
+
+.full-container:not(:first-child) {
+	padding-bottom: 50px;
+}
+
+.full-container:nth-child(2n) {
+    background-color: #377b89;
+    color: #fff;
+}
+
+.container {
+    margin: auto;
+    max-width: 970px;
+    overflow: hidden;
+    padding: 0px 20px;
+}
+
+.container.about-me h2 {
+	margin-bottom: 40px;
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    margin-right: 50px;
+    width: 100px;
+}
+
+.logo img {
+    max-height: 100px;
+}
+
+.description {
+    display: none;
+	clear: both;
+    padding-top: 10px;
+}
+
+.description a {
+	color: #387dcc;
+}
+
+.description a:hover {
+    color: #377b89;
+}
+
+.competences {
+    display: none;
+	margin-bottom: 30px;    
+	overflow: hidden;
+}
+
+.competences div {
+	float: left;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.competences img {
+    height: 120px;
+}
+
+.video {
+    height: 0;
+	overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.video iframe {
+    height: 100%;
+	left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.chevron {
+    background: none;
+    border: none;
+    color: #387dcc;
+    cursor: pointer;
+    font-size: 40px;
+    left: 10px;
+    margin-right: 2px;
+    position: relative;
+    top: 7px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.chevron:hover {
+    color: #377b89;
+    outline: 0;
+}
+
+.chevron-input:checked ~ .competences, .chevron-input:checked ~ .description { 
+    display: block;
+}      
+
+.chevron-input:checked + h2 > label { 
+    transform: rotate(-180deg) !important;
+}
+
+.dash {
+    background-color: #f8f9fa;
+}
+
+.dash-container {
+    margin: auto;
+    max-width: 1600px;
+    overflow: hidden;
+    padding: 0px 20px;
+}
+
+.dash-container h2 {  
+    /*color: #377b89; */
+    font-size: 30px; 
+    /*margin-bottom: 25px;*/
+    /*text-align: center;*/
+}
+
+.break {
+    clear: both;
+}
+
+.cards {
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    box-shadow: none;
+    box-sizing: border-box;
+    float: left;
+    margin: 7px;
+    padding: 16px;
+    text-align: center;
+}
+
+.cards * {
+    font-family:  'Roboto', sans-serif !important
+}
+
+.cards-titles {
+    color: #377b89;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.cards-subtitles {
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.cards-table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.cards-table th {
+    color: #999;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 7px 0px;
+    width: 100%;
+}
+
+.cards-table tr {
+    width: 100%;
+}
+
+.cards-table td {
+    padding: 7px 0px;
+    width: 100%;
+}
+
+.cards-table th:not(:last-child), .cards-table td:not(:last-child) {
+    text-align: left;
+}
+
+.cards-table th:last-child, .cards-table td:last-child {
+    text-align: right;
+}
+
+.cards-table tr:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.counter {
+    color: #377b89;
+    font-size: 36px;
+}
+
+p.illustrations {
+    text-align: center;
+}
+
+p.illustrations img {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.large-100 {
+    width: calc(100% - 14px);
+}
+
+.large-75 {
+    width: calc(75% - 14px);
+}
+
+.large-50 {
+    width: calc(50% - 14px);
+}
+
+.large-34 {
+    width: calc(34% - 14px);
+}
+
+.large-33 {
+    width: calc(33% - 14px);
+}
+
+.large-25 {
+    width: calc(25% - 14px);
+}
+
+@media screen and (max-width: 950px) {
+    .nav a.active:not(:first-child) {
+        border-left: 2px solid #fff;
+        border-bottom: none;
+    }
+
+    .nav a.active:first-child {
+        border-bottom: none;
+    }
+
+	.nav a:not(:first-child), .nav span {
+        display: none;
+    }
+
+    .nav a.icon {
+        display: block;
+        float: right;
+    }
+
+    .nav.responsive {
+        position: relative;
+    }
+
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav.responsive a, .nav.responsive span {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .medium-100 {
+        width: calc(100% - 14px);
+    }
+
+    .medium-75 {
+        width: calc(75% - 14px);
+    }
+
+    .medium-50 {
+        width: calc(50% - 14px);
+    }
+
+    .medium-33 {
+        width: calc(33% - 14px);
+    }
+
+    .medium-25 {
+        width: calc(25% - 14px);
+    }
+
+    #me-picture {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #me-description {
+        padding: 50px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h1, h2, h3, h4 {
+    	text-align: center;
+    }
+
+    #me-description {
+	    text-align: center;
+    }
+
+    .logo {
+        float: none;
+        margin-bottom: 50px;
+        margin-right: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cards {
+        text-align: center;
+    }
+
+    .small-100 {
+        width: calc(100% - 14px);        
+    }
+
+    .small-75 {
+        width: calc(75% - 14px);
+    }
+
+    .small-50 {
+        width: calc(50% - 14px);
+    }
+
+    .small-33 {
+        width: calc(33% - 14px);
+    }
+
+    .small-25 {
+        width: calc(25% - 14px);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #me-picture img {
+	    width : 100%;
+    }
+}
